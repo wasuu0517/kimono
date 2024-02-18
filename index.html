@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>リダイレクト</title>
+<script>
+    // ユーザーエージェントを取得
+    var userAgent = navigator.userAgent.toLowerCase();
+
+    // スマートフォンの場合は指定のURLにリダイレクト
+    if (userAgent.indexOf('iphone') > -1 || userAgent.indexOf('ipad') > -1 || userAgent.indexOf('android') > -1) {
+        window.location.href = 'https://wasuu0517.github.io/kimono/index.html';
+    }
+    // PCの場合は別のURLにリダイレクト
+    else {
+        window.location.href = 'https://makikozhefukejiaoshi8.webnode.jp/';
+    }
+</script>
+</head>
+<body>
+<!-- ここにはリダイレクト前のメッセージを入れることができます -->
+</body>
+</html>
